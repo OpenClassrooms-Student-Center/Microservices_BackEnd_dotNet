@@ -1,4 +1,4 @@
-namespace HarmonieSanteParamedicalMonolithic
+namespace HarmonieSanteParamedicalMonolithic.Bdd
 {
     using System;
     using System.Collections.Generic;
@@ -12,10 +12,10 @@ namespace HarmonieSanteParamedicalMonolithic
         public int Id { get; set; }
 
         [StringLength(100)]
-        public string FName { get; set; }
+        public string FirstName { get; set; }
 
         [StringLength(100)]
-        public string LName { get; set; }
+        public string LastName { get; set; }
 
         [StringLength(50)]
         public string Speciality { get; set; }

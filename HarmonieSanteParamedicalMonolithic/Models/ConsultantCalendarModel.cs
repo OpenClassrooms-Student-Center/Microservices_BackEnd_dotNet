@@ -7,9 +7,9 @@ namespace HarmonieSanteParamedicalMonolithic.Models
 {
     public class ConsultantCalendarModel
     {
-        public int id { get; set; }
-        public string consultantName { get; set; }
+        public int Id { get; set; }
+        public string ConsultantName { get; set; }
 
-        public List<DateTime> availableDates { get; set; }
+        public List<DateTime> AvailableDates { get; set; }
     }
 }

@@ -7,7 +7,7 @@ namespace HarmonieSanteParamedicalMonolithic.Models
 {
     public class AvailableCalendarDates
     {
-        public DateTime availableDate { get; set; }
-        public DateTime availableTime { get; set; }
+        public DateTime AvailableDate { get; set; }
+        public DateTime AvailableTime { get; set; }
     }
 }

@@ -1,4 +1,4 @@
-namespace HarmonieSanteParamedicalMonolithic
+namespace HarmonieSanteParamedicalMonolithic.Bdd
 {
     using System;
     using System.Collections.Generic;
@@ -9,13 +9,13 @@ namespace HarmonieSanteParamedicalMonolithic
     [Table("Patient")]
     public partial class Patient
     {
-        public int ID { get; set; }
+        public int Id { get; set; }
 
         [StringLength(50)]
-        public string FName { get; set; }
+        public string FirstName { get; set; }
 
         [StringLength(50)]
-        public string LName { get; set; }
+        public string LastName { get; set; }
 
         [StringLength(255)]
         public string Address1 { get; set; }

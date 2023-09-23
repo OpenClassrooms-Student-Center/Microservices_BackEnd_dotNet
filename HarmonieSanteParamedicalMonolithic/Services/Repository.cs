@@ -1,17 +1,17 @@
-﻿using HarmonieSanteParamedicalMonolithic.Models;
+﻿using HarmonieSanteParamedicalMonolithic.Bdd;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 
-namespace HarmonieSanteParamedicalMonolithic.Code
+namespace HarmonieSanteParamedicalMonolithic.Services
 {
     public class Repository
     {
-    
+
         public List<Consultant> FetchConsultants(CHDBContext dbContext)
         {
-            var cons = dbContext.consultants.ToList();
+            var cons = dbContext.Consultants.ToList();
             return cons;
         }
 
@@ -20,13 +20,13 @@ namespace HarmonieSanteParamedicalMonolithic.Code
             //Faut-il regrouper les informations relatives au praticien et au calendrier (dates disponibles) ? 
             //Est-ce que c'est pour ça que le calendrier est lent à charger ? Comment est-ce qu'on peut réécrire cela ?
 
-            return dbContext.consultantCalendars.ToList();
+            return dbContext.ConsultantCalendars.ToList();
         }
 
         public bool CreateAppointment(Appointment model, CHDBContext dbContext)
         {
             //Est-ce qu'il faut vérifier ici avant de confirmer le rendez-vous ?
-            dbContext.appointments.Add(model);
+            dbContext.Appointments.Add(model);
             return true;
         }
     }

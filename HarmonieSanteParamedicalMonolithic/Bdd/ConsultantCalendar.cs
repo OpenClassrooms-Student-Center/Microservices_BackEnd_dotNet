@@ -1,4 +1,4 @@
-namespace HarmonieSanteParamedicalMonolithic
+namespace HarmonieSanteParamedicalMonolithic.Bdd
 {
     using System;
     using System.Collections.Generic;

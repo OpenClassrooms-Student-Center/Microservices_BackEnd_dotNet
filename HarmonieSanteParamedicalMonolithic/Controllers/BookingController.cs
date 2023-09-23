@@ -1,5 +1,6 @@
-﻿using HarmonieSanteParamedicalMonolithic.Code;
+﻿using HarmonieSanteParamedicalMonolithic.Bdd;
 using HarmonieSanteParamedicalMonolithic.Models;
+using HarmonieSanteParamedicalMonolithic.Services;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -20,8 +21,8 @@ namespace HarmonieSanteParamedicalMonolithic.Controllers
             Repository repo = new Repository();
             List<Consultant> cons = new List<Consultant>();
             cons = repo.FetchConsultants(dbContext);
-            conList.ConsultantsList = new SelectList(cons, "Id", "FName");
-            conList.consultants = cons;
+            conList.ConsultantsList = new SelectList(cons, "Id", "FirstName");
+            conList.Consultants = cons;
 
             return View(conList);
         }

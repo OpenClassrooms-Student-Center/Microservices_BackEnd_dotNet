@@ -1,4 +1,4 @@
-namespace HarmonieSanteParamedicalMonolithic
+namespace HarmonieSanteParamedicalMonolithic.Bdd
 {
     using System;
     using System.Collections.Generic;
@@ -15,8 +15,12 @@ namespace HarmonieSanteParamedicalMonolithic
 
         public DateTime? EndDateTime { get; set; }
 
+        [ForeignKey("Consultant")]
         public int? ConsultantId { get; set; }
+        public virtual Consultant Consultant { get; set; }
 
+        [ForeignKey("Patient")]
         public int? PatientId { get; set; }
+        public virtual Patient Patient { get; set; }
     }
 }

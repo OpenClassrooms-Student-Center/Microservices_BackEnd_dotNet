@@ -8,55 +8,55 @@ namespace HarmonieSanteParamedicalMonolithic.Models
 {
     public class BookingModel
     {
-        public PatientDetails patient { get; set; }
-        public ConsultantDetails consultant { get; set; }
-        public FacilityDetails facility { get; set; }
-        public PaymentDetails payment { get; set; }
-        public AppointmentDetails appointment { get; set; }
+        public PatientDetails Patient { get; set; }
+        public ConsultantDetails Consultant { get; set; }
+        public FacilityDetails Facility { get; set; }
+        public PaymentDetails Payment { get; set; }
+        public AppointmentDetails Appointment { get; set; }
     }
 
     public class AppointmentDetails
     {
-        public Guid appointmentId { get; set; }
-        public DateTime appointmentDate { get; set; }
-        public DateTime appointmentTime { get; set; }
+        public Guid AppointmentId { get; set; }
+        public DateTime AppointmentDate { get; set; }
+        public DateTime AppointmentTime { get; set; }
     }
 
     public class ConsultantDetails
     {
-        public int consultantId { get; set; }
-        public string consultantName { get; set; }
-        public string consultantSpeciality { get; set; }
-        public int facilityId { get; set; }
+        public int ConsultantId { get; set; }
+        public string ConsultantName { get; set; }
+        public string ConsultantSpeciality { get; set; }
+        public int FacilityId { get; set; }
     }
 
     public class FacilityDetails
     {
-        public int facilityId { get; set; }
-        public string facilityName { get; set; }
-        public string facilityAddressLine1 { get; set; }
-        public string facilityAddressLine2 { get; set; }
-        public string facilityRegion { get; set; }
-        public string facilityCity { get; set; }
-        public string facilityPostcode { get; set; }
-        public string facilityContactNumber { get; set; }
+        public int FacilityId { get; set; }
+        public string FacilityName { get; set; }
+        public string FacilityAddressLine1 { get; set; }
+        public string FacilityAddressLine2 { get; set; }
+        public string FacilityRegion { get; set; }
+        public string FacilityCity { get; set; }
+        public string FacilityPostcode { get; set; }
+        public string FacilityContactNumber { get; set; }
     }
 
     public class PatientDetails
     {
-        public int patientId { get; set; }
-        public string patientName { get; set; }
+        public int PatientId { get; set; }
+        public string PatientName { get; set; }
         public string AddressLine1 { get; set; }
         public string AddressLine2 { get; set; }
         public string Region { get; set; }
         public string City { get; set; }
         public string Postcode { get; set; }
-        public string contactNumber { get; set; }
+        public string ContactNumber { get; set; }
     }
 
     public class PaymentDetails
     {
-        public int paymentId { get; set; }
-        public double payment { get; set; }
+        public int PaymentId { get; set; }
+        public double Payment { get; set; }
     }    
 }
