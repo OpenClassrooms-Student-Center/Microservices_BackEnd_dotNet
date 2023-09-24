@@ -1,4 +1,4 @@
-# Projet 2 Parcours .Net
+# Projet 8 Parcours .Net
 
 Si erreur au premier lancement.
 - Supprimer dossier bin et obj
